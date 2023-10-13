@@ -18,20 +18,9 @@ public class Template {
      */
     public static void main(String[] args) throws IOException  {
         // TODO code application logic here
+        
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-       
-        //Network network = null;
-        login();
-        System.out.println("1 - Continue\n"
-        +"2 - Stop");
-        int choice=Integer.parseInt(reader.readLine());
-        if(choice==1){
-        login();
-        }
-    
-    }
-    public static void login() throws IOException {
-         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Network network = null;
         System.out.print("Input user name: ");
         String userName = reader.readLine();
         System.out.print("Input password: ");
@@ -58,5 +47,6 @@ public class Template {
         new LinkedIn(userName,password).post(message.Description);
         }
     }
+  
     
 }
