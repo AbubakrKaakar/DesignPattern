@@ -5,21 +5,32 @@
  */
 package mediator.Labwork;
 
+import java.util.Date;
+
 /**
  *
  * @author sp20-bse-072
  */
 public class University implements IChatter {
     public String name;
-    public String address;
+    //public String address;
+    University (String name){
+    this.name=name;
+    }
+
     @Override
-    public void SendMessage(IChatter receiver,String message) {
-        
+    public String getName() {
+        return name;
+    }
+    
+    @Override
+    public void SendMessage(String message,IChatter... receiver) {
+        ChatRoom.showMessage(this, receiver, message);
     }
 
     @Override
     public void ReceiveMessage(IChatter sender,String message) {
-        
+        System.out.println(new Date().toString() + " [" + sender.getName() + "] : " + message);
     }
     
 }

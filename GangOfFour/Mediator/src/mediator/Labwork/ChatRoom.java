@@ -13,9 +13,11 @@ import mediator.*;
 import java.util.Date;
 
 public class ChatRoom {
-   public static void showMessage(IChatter Sender,IChatter receiver, String message){
+   public static void showMessage(IChatter Sender,IChatter[] receivers, String message){
       //System.out.println(new Date().toString() + " [" + user.getName() + "] : " + message);
+      for (IChatter receiver: receivers){
       receiver.ReceiveMessage(Sender,message);
+      }
    
    }
 }

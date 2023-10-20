@@ -5,6 +5,7 @@
  */
 package mediator.Labwork;
 
+import java.util.Date;
 import mediator.*;
 
 /**
@@ -14,12 +15,9 @@ import mediator.*;
 public class User implements IChatter{
    private String name;
 
+   @Override
    public String getName() {
       return name;
-   }
-
-   public void setName(String name) {
-      this.name = name;
    }
 
    public User(String name){
@@ -27,12 +25,13 @@ public class User implements IChatter{
    }
 
     @Override
-    public void SendMessage(IChatter receiver, String message) {
-        
+    public void SendMessage( String message,IChatter... receiver) {
+        ChatRoom.showMessage(this, receiver, message);
     }
 
     @Override
     public void ReceiveMessage(IChatter sender, String message) {
-       
+//        System.out.println("The message has been sent from ");
+        System.out.println(new Date().toString() + " [" + sender.getName() + "] : " + message);
     }
 }

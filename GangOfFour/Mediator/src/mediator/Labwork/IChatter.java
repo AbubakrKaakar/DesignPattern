@@ -10,6 +10,7 @@ package mediator.Labwork;
  * @author sp20-bse-072
  */
 public interface IChatter {
-    void SendMessage(IChatter receiver, String message);
+    void SendMessage( String message,IChatter... receiver);
     void ReceiveMessage(IChatter sender, String message);
+    String getName();
 }

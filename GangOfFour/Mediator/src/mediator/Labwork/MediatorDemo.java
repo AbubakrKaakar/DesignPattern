@@ -18,8 +18,13 @@ public class MediatorDemo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        User robert = new User("Robert");
-      User john = new User("John");
+        IChatter user = new User("User");
+        IChatter teacher=new Teacher("Teacher");
+        IChatter university=new University("COSMATS");
+        IChatter [] group={user,teacher};
+        user.SendMessage("Hello teacher welcome to class!",teacher);
+        university.SendMessage("To all stuff! Friday is off due of emergency.",group);
+        //User john = new User("John");
     }
     
 }
