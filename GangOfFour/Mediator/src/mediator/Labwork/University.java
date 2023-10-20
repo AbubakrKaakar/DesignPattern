@@ -11,15 +11,15 @@ package mediator.Labwork;
  */
 public class University implements IChatter {
     public String name;
-    public String department;
+    public String address;
     @Override
-    public void SendMessage() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void SendMessage(IChatter receiver,String message) {
+        
     }
 
     @Override
-    public void ReceiveMessage(IChatter sender) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void ReceiveMessage(IChatter sender,String message) {
+        
     }
     
 }

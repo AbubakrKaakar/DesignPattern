@@ -11,7 +11,7 @@ import mediator.*;
  *
  * @author sp20-bse-072
  */
-public class Mediator {
+public class MediatorDemo {
 
     /**
      * @param args the command line arguments
@@ -20,9 +20,6 @@ public class Mediator {
         // TODO code application logic here
         User robert = new User("Robert");
       User john = new User("John");
-
-      robert.sendMessage("Hi! John!");
-      john.sendMessage("Hello! Robert!");
     }
     
 }

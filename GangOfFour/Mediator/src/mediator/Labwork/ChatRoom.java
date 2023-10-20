@@ -15,8 +15,7 @@ import java.util.Date;
 public class ChatRoom {
    public static void showMessage(IChatter Sender,IChatter receiver, String message){
       //System.out.println(new Date().toString() + " [" + user.getName() + "] : " + message);
-      Sender.SendMessage();
-      receiver.ReceiveMessage(Sender);
+      receiver.ReceiveMessage(Sender,message);
    
    }
 }

@@ -9,6 +9,17 @@ package mediator.Labwork;
  *
  * @author sp20-bse-072
  */
-public class Teacher {
+public class Teacher implements IChatter{
+    public String name;
+    public String department;
+    @Override
+    public void SendMessage(IChatter receiver, String message) {
+        
+    }
+
+    @Override
+    public void ReceiveMessage(IChatter sender, String message) {
+        
+    }
     
 }
