@@ -5,27 +5,26 @@
  */
 package Labwork1;
 
-import Example1.*;
-
 /**
  *
  * @author SP20-BSE-072
  */
-//Concrete Command
+public class LightReplaceCommand implements Command{
 
-public class LightOnCommand implements Command {
-
-    // reference to the light
     private Light light;
 
-    public LightOnCommand(Light light) {
+    public LightReplaceCommand(Light light) {
         this.light = light;
     }
-
+    @Override
     public void execute() {
-        light.displaystatus();
+        
+        light.switchOff();
+        System.out.println("Light is off");
+        light=new Light();
+        System.out.println("Light is replaced");
         light.switchOn();
-        System.out.println("Light is on");
+        System.out.println("Light is On");
     }
-
+    
 }

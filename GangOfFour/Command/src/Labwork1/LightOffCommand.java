@@ -22,6 +22,7 @@ public class LightOffCommand implements Command {
         this.light = light;
     }
     public void execute() {
+        light.displaystatus();
         light.switchOff();
         System.out.println("Light is off");
     }

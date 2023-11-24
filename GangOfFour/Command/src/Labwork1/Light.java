@@ -24,5 +24,10 @@ public class Light {
     public void switchOff() {
         isOn = false;
     }
-
+    public void displaystatus(){
+        System.out.println("Light is on: "+isOn);
+    }
+    public Light replace(){
+    return new Light();
+    }
 }

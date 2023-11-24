@@ -19,7 +19,7 @@ public class demo {
         Light light = new Light();
         Command lightsOn = new LightOnCommand(light);
         Command lightsOff = new LightOffCommand(light);
-
+        Command lightreplace=new LightReplaceCommand(light);
         // switch on
         control.setCommand(lightsOn);
         control.pressButton();
@@ -27,7 +27,10 @@ public class demo {
         // switch off
         control.setCommand(lightsOff);
         control.pressButton();
-
+        
+        //light replacement
+        control.setCommand(lightreplace);
+        control.pressButton();
     }
 
 }
