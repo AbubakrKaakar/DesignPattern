@@ -19,18 +19,18 @@ public class VlcPlayer implements AdvancedMediaPlayer{
       System.out.println("Playing vlc file. Name: "+ fileName);		
    }
 
-   @Override
-   public void playMp4(String fileName) {
-      //do nothing
-   }
-
-    @Override
-    public void playMKV(String fileName) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void playAVI(String fileName) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+//   @Override
+//   public void playMp4(String fileName) {
+//      //do nothing
+//   }
+//
+//    @Override
+//    public void playMKV(String fileName) {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
+//
+//    @Override
+//    public void playAVI(String fileName) {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
 }

@@ -14,8 +14,9 @@ import Example.*;
  * @author SP20-BSE-072
  */
 public interface AdvancedMediaPlayer{
-    public void playVlc(String fileName);
-   public void playMp4(String fileName);
-   void playMKV(String fileName);
-   void playAVI(String fileName);
+    default public void playVlc(String fileName){
+     };
+    default public void playMp4(String fileName){};
+    default public void playMKV(String fileName){};
+    default public void playAVI(String fileName){};
 }
