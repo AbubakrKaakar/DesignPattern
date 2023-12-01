@@ -19,7 +19,6 @@ public abstract class BaseEmployee implements IEmployee {
    
       @Override
     public int giveBonus(int percentage) {
-       
        return (int)salary/percentage; 
     }
 }
