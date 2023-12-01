@@ -12,10 +12,14 @@ package LabWork;
 public abstract class BaseEmployee implements IEmployee {
    String name;
    int salary;
+
+    public BaseEmployee( int salary) {
+        this.salary = salary;
+    }
    
       @Override
     public int giveBonus(int percentage) {
        
-       return 0; 
+       return (int)salary/percentage; 
     }
 }

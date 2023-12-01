@@ -14,9 +14,10 @@ import java.util.List;
  */
 public class Director extends BaseEmployee{
    List<IEmployee> subordinates=new ArrayList<IEmployee>();
-//    @Override
-//    public void giveBonus(int percentage) {
-//           }
+
+    public Director( int salary) {
+        super( salary);
+    }
    
     public void Add(IEmployee e){
     subordinates.add(e);

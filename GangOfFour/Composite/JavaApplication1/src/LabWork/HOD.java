@@ -15,11 +15,12 @@ import java.util.List;
 public class HOD extends BaseEmployee  {
     List<IEmployee> subordinates=new ArrayList<IEmployee>();
     String Department;
-//    @Override
-//    public void giveBonus(int percentage) {
-//        
-//    
-//    }
+
+    public HOD(int salary) {
+        
+        super(salary);
+        
+    }
     public void Add(IEmployee e){
     subordinates.add(e);
     }

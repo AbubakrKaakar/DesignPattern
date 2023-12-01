@@ -11,10 +11,9 @@ package LabWork;
  */
 public class DOO extends BaseEmployee {
      String rank;
-//    @Override
-//    public void giveBonus(int percentage) {
-//        
-//    
-//    }
+
+    public DOO(int salary) {
+        super(salary);
+    }
     
 }

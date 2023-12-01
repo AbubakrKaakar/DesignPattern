@@ -12,9 +12,9 @@ package LabWork;
 public class Teacher extends BaseEmployee{
     String Qualification;
     String status;
-//    @Override
-//    public void giveBonus(int percentage) {
-//      
-//    }
+
+    public Teacher(int salary) {
+        super( salary);
+    }
     
 }
