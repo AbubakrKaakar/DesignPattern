@@ -7,10 +7,10 @@ package LabWork;
 
 /**
  *
- * @author sp20-bse-072
+ * @author abuba
  */
-public interface IEmployee {
-    int giveBonus(int percentage);
-    double calculateSalary();
-    Iterable<IEmployee> getSubordinates(); 
+
+ interface Observer {
+    void update(double bonus);
 }
+

@@ -9,11 +9,11 @@ package LabWork;
  *
  * @author sp20-bse-072
  */
-public class DOO extends BaseEmployee {
+public abstract class DOO extends BaseEmployee {
      String rank;
 
-    public DOO(int salary) {
-        super(salary);
+  public DOO(String name, double salary) {
+        super(name, salary);
     }
     
 }

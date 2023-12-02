@@ -12,11 +12,11 @@ import java.util.List;
  *
  * @author sp20-bse-072
  */
-public class Director extends BaseEmployee{
+public abstract class Director extends BaseEmployee{
    List<IEmployee> subordinates=new ArrayList<IEmployee>();
 
-    public Director( int salary) {
-        super( salary);
+   public Director(String name, double salary) {
+        super(name, salary);
     }
    
     public void Add(IEmployee e){

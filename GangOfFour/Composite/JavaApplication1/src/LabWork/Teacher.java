@@ -9,12 +9,11 @@ package LabWork;
  *
  * @author sp20-bse-072
  */
-public class Teacher extends BaseEmployee{
+public abstract class Teacher extends BaseEmployee{
     String Qualification;
     String status;
-
-    public Teacher(int salary) {
-        super( salary);
+ public Teacher(String name, double salary) {
+        super(name, salary);
     }
     
 }

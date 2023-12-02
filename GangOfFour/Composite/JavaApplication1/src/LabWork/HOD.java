@@ -12,14 +12,12 @@ import java.util.List;
  *
  * @author sp20-bse-072
  */
-public class HOD extends BaseEmployee  {
+public abstract class HOD extends BaseEmployee  {
     List<IEmployee> subordinates=new ArrayList<IEmployee>();
     String Department;
 
-    public HOD(int salary) {
-        
-        super(salary);
-        
+  public HOD(String name, double salary) {
+        super(name, salary);
     }
     public void Add(IEmployee e){
     subordinates.add(e);
