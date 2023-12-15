@@ -9,7 +9,6 @@ package LabWork;
  *
  * @author sp20-bse-072
  */
-import Example.*;
 import java.awt.*;
 
 public class Circle extends BaseShape {

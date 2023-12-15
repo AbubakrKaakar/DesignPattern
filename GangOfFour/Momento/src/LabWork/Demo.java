@@ -32,6 +32,11 @@ public class Demo {
                         new Dot(240, 360, Color.GREEN),
                         new Dot(360, 360, Color.GREEN),
                         new Dot(360, 240, Color.GREEN)
+                ),
+                 new CompoundShape(
+                        new Oval(110, 210, 50, Color.BLUE),
+                        new Dot(160, 160, Color.BLUE)
+          
                 )
         );
     }
