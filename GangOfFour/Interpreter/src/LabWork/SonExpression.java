@@ -11,16 +11,16 @@ package LabWork;
  */
 public class SonExpression implements Expression{
     
-   private Expression expr1 = null;
-   private Expression expr2 = null;
+   private Expression Son = null;
+   private Expression Father = null;
 
     public SonExpression(Expression expr1, Expression expr2) { 
-      this.expr1 = expr1;
-      this.expr2 = expr2;
+      this.Son = expr1;
+      this.Father = expr2;
    }   
     @Override
     public boolean interpret(String context) {
-        return expr1.interpret(context) && expr2.interpret(context);
+        return Son.interpret(context) && Father.interpret(context);
     }
     
 }
