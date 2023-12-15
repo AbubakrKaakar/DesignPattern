@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package interpreter;
+package LabWork;
 
 /**
  *
@@ -21,7 +21,6 @@ public class SonExpression implements Expression{
     @Override
     public boolean interpret(String context) {
         return expr1.interpret(context) && expr2.interpret(context);
-   
     }
     
 }

@@ -1,0 +1,40 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package LabWork;
+
+/**
+ *
+ * @author sp20-bse-072
+ */
+public class Demo {
+
+    //Rule: Robert and John are male
+   public static Expression getMaleExpression(){
+      Expression robert = new TerminalExpression("Robert");
+      Expression john = new TerminalExpression("John");
+      return new OrExpression(robert, john);		
+   }
+
+   //Rule: Julie is a married women
+   public static Expression getMarriedWomanExpression(){
+      Expression julie = new TerminalExpression("Julie");
+      Expression married = new TerminalExpression("Married");
+      return new AndExpression(julie, married);		
+   }
+  public static Expression getSonExpression(){
+  Expression Ali=new TerminalExpression("Ali");
+  Expression Ahmad=new TerminalExpression("Ahmad");
+  return new SonExpression(Ali,Ahmad);
+  }
+   public static void main(String[] args) {
+      Expression isMale = getMaleExpression();
+      Expression isMarriedWoman = getMarriedWomanExpression();
+      Expression isSon=getSonExpression();
+      System.out.println("John is male? " + isMale.interpret("John"));
+      System.out.println("Julie is a married women? " + isMarriedWoman.interpret("Married Julie"));
+       System.out.println("Is Ali a son? "+ isSon.interpret("Ali Ahmad"));
+   }
+}

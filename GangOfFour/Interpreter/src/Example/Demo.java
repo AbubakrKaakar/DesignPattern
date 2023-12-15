@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package interpreter;
+package Example;
 
 /**
  *
@@ -24,17 +24,12 @@ public class Demo {
       Expression married = new TerminalExpression("Married");
       return new AndExpression(julie, married);		
    }
-  public static Expression getSonExpression(){
-  Expression Ali=new TerminalExpression("Ali");
-  Expression Ahmad=new TerminalExpression("Ahmad");
-  return new SonExpression(Ali,Ahmad);
-  }
    public static void main(String[] args) {
       Expression isMale = getMaleExpression();
       Expression isMarriedWoman = getMarriedWomanExpression();
-      Expression isSon=getSonExpression();
+      
       System.out.println("John is male? " + isMale.interpret("John"));
       System.out.println("Julie is a married women? " + isMarriedWoman.interpret("Married Julie"));
-       System.out.println("Is Ali a son? "+ isSon.interpret("Ali Ahmad"));
+      
    }
 }
